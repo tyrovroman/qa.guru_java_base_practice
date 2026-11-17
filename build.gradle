@@ -7,7 +7,12 @@ repositories {
 }
 
 dependencies {
-
+    testRuntimeOnly (
+            "org.junit.platform:junit-platform-launcher:6.1.0",
+            "org.slf4j:slf4j-simple:2.0.18")
+    testImplementation (
+            "com.codeborne:selenide:6.19.1",
+            "org.junit.jupiter:junit-jupiter:6.1.0")
 }
 
 tasks.withType(JavaCompile) {
